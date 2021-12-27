@@ -7,7 +7,4 @@ for i in test_str:
         most_freq[i] += 1
     else:
         most_freq[i] = 1
-  
-# printing result 
-print ("Count of all characters in MISSISSIPPI is :\n "
-                                        +  str(most_freq))
+print ("Count of all characters in MISSISSIPPI is :\n " +  str(most_freq))
