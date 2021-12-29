@@ -1,10 +1,14 @@
-test_str = "MISSISSIPPI"
+# each occurrence frequency using 
+# collections.Counter()
+from collections import Counter
   
-most_freq = {}
+# initializing string 
+test_str = "GeeksforGeeks"
   
-for i in test_str:
-    if i in most_freq:
-        most_freq[i] += 1
-    else:
-        most_freq[i] = 1
-print ("Count of all characters in MISSISSIPPI is :\n " +  str(most_freq))
+# using collections.Counter() to get 
+# count of each element in string 
+res = Counter(test_str)
+  
+# printing result 
+print ("Count of all characters in GeeksforGeeks is :\n "
+                                           +  str(res))
